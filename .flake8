@@ -1,0 +1,13 @@
+[flake8]
+# Match Black's default line length
+max-line-length = 88
+
+# Errors to ignore:
+# E203: Whitespace before ':' (conflict with Black)
+# E266: Too many leading '#' for block comment
+# E501: Line too long (replaced by B950)
+# W503: Line break before binary operator (conflict with Black)
+ignore = E203, E266, E501, W503
+
+# Exclude these directories from linting
+exclude = migrations, __pycache__, .venv
